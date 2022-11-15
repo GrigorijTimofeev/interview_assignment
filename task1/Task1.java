@@ -16,7 +16,6 @@ public class Task1 {
         }
         StringBuilder res = new StringBuilder();
         if (m > n) m %= n;
-        System.out.println("n = " + n + " m = " + m);
         int start = 0; //index
         do {
             res.append(start + 1);
