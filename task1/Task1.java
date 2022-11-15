@@ -1,11 +1,18 @@
-import java.util.*;
 
 public class Task1 {
     public static void main(String[] args) {
-        Scanner scnr = new Scanner(System.in);
-        int n = scnr.nextInt();
-        int m = scnr.nextInt();
-        scnr.close();
+        if (args.length < 2) {
+            System.out.println("There's should be 2 arguments");
+            return ;
+        }
+        int n = 0, m = 0; 
+        try {
+            n = Integer.parseInt(args[0]);
+            m = Integer.parseInt(args[1]);
+        } catch (Exception e) {
+            System.out.println("Argument should be integer. " + e.getMessage());
+            return ;
+        }
         if (n == 1 && m > 0) {
             System.out.println("1");
             return ;

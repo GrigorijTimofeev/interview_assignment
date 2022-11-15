@@ -1,3 +1,4 @@
 .vscode
-/task2/file1
-/task2/file2
+/task2/file*
+/task3/*.json
+/task4/file
